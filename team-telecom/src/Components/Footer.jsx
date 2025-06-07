@@ -23,7 +23,7 @@ export default function Footer() {
                     <ul className="space-y-2 text-sm">
                         <li><a href="#" className="hover:text-white">Интернет</a></li>
                         <li><a href="#" className="hover:text-white">Мобильная связь</a></li>
-                        <li><a href="#" className="hover:text-white">ТВ</a></li>
+                        <li><a href="#" className="hover:text-white">TV</a></li>
                     </ul>
                 </div>
                 <div>

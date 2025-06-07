@@ -1,16 +1,38 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import SectionItem from './Section-Item';
+
+const sections = [
+    {
+        id: 1,
+        title: 'COSMO',
+        body: 'При подключении онлайн — первый месяц БЕСПЛАТНО.',
+        imgURL: 'https://www.telecomarmenia.am/images/advanced_slider/2/17486286320455.png'
+    },
+    {
+        id: 2,
+        title: 'Тарифный план BE FREE 4000',
+        body: 'Тарифный план BE FREE 4000',
+        imgURL: 'https://www.telecomarmenia.am/images/advanced_slider/1/17144722984561.png'
+    },
+]
 export default function Section() {
     return (
-        <section className="bg-gray-100 py-12">
-            <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Станьте ближе с нашими услугами связи</h1>
-                    <p className="text-gray-600 mb-6">Подключайтесь к лучшему интернету, ТВ и мобильной связи.</p>
-                    <button className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 cursor-pointer">Узнать больше</button>
-                </div>
-                <div>
-                    <img src="https://www.telecomarmenia.am/images/advanced_slider/2/17486286320455.png" alt="Promo" className="rounded-lg shadow-md" />
-                </div>
-            </div>
-        </section>
-    )
+        <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            modules={[Navigation]}
+            navigation={true}
+        >
+            {sections.map(el => {
+                return (
+                    <SwiperSlide>
+                        <SectionItem title={el.title} body={el.body} imgURL={el.imgURL} key={el.id} />
+                    </SwiperSlide>
+                )
+            })}
+        </Swiper>
+    );
 }
