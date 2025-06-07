@@ -2,6 +2,7 @@ import './index.css'
 import Header from './Components/Header'
 import Section from './Components/Section'
 import Category from './Components/Category'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Section />
         <Category />
+        <Footer />
       </div>
     </>
   )
