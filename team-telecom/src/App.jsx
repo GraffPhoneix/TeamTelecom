@@ -5,6 +5,7 @@ import Category from './Components/Category'
 import Footer from './Components/Footer'
 import JoinUs from './Components/Join-us'
 import News from './Components/News'
+import OurApps from './Components/Our-apps'
 
 export default function App() {
   return (
@@ -12,8 +13,9 @@ export default function App() {
       <Header />
       <Section />
       <Category />
-      <News />
       <JoinUs />
+      <News />
+      <OurApps />
       <Footer />
     </div>
   )
