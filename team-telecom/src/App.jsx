@@ -6,13 +6,13 @@ import Footer from './Components/Footer'
 import JoinUs from './Components/Join-us'
 
 export default function App() {
-    return (
-      <div className='Team-Telecom-Armenia'>
-        <Header />
-        <Section />
-        <Category />
-        <JoinUs />
-        <Footer />
-      </div>
-    )
-  }
+  return (
+    <div className='Team-Telecom-Armenia'>
+      <Header />
+      <Section />
+      <Category />
+      <JoinUs />
+      <Footer />
+    </div>
+  )
+}
