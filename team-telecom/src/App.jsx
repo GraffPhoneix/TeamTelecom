@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import Section from './Components/Section'
 import Category from './Components/Category'
 import Footer from './Components/Footer'
+import JoinUs from './Components/Join-us'
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
         <Header />
         <Section />
         <Category />
+        <JoinUs />
         <Footer />
       </div>
     )
