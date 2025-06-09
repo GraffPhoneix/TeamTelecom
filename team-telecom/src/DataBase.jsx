@@ -4,6 +4,8 @@ import promo3 from './Img/Promo/img_3.png'
 import promo4 from './Img/Promo/img_4.png'
 import slider1 from './Img/Slider/img_1.png'
 import slider2 from './Img/Slider/img_2.png'
+import slider3 from './Img/Slider/img_3.jpg'
+import slider4 from './Img/Slider/img_4.png'
 
 const dataBase = {
     categories: [
@@ -44,6 +46,18 @@ const dataBase = {
             title: 'Тарифный план BE FREE 4000',
             body: 'Тарифный план BE FREE 4000',
             imgURL: slider2
+        },
+        {
+            id: 3,
+            title: 'BE FREE 3500',
+            body: 'Безлимитный интернет',
+            imgURL: slider3
+        },
+        {
+            id: 4,
+            title: 'Sony Smart TV',
+            body: 'Пакеты COSMO / COMBO',
+            imgURL: slider4
         }
     ]
 }
