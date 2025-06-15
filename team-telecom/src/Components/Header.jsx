@@ -1,5 +1,3 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
 export default function Header() {
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
@@ -9,8 +7,8 @@ export default function Header() {
                     <a href='/' className="hover:text-red-600 cursor-pointer">Главная</a>
                     <a href='/register' className="hover:text-red-600 cursor-pointer">Регистрация</a>
                     <a href='/payment' className="hover:text-red-600 cursor-pointer">Онлайн-платежи</a>
-                    <a className="hover:text-red-600 cursor-pointer">Поддержка</a>
-                    <a className="hover:text-red-600 cursor-pointer">Компания</a>
+                    <a className="hover:text-red-600 cursor-pointer">Магазин</a>
+                    <a className="hover:text-red-600 cursor-pointer">Корзина</a>
                 </nav>
                 <div className="flex items-center space-x-4">
                     <button className="text-sm hover:text-red-600 cursor-pointer">RU</button>
