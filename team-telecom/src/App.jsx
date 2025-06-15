@@ -1,22 +1,18 @@
 import './index.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header'
-import Section from './Components/Section'
-import Category from './Components/Category'
 import Footer from './Components/Footer'
-import JoinUs from './Components/Join-us'
-import News from './Components/News'
-import OurApps from './Components/Our-apps'
+import Home from './Routes/Home'
+
 
 export default function App() {
   return (
-    <div className='Team-Telecom-Armenia'>
+    <Router>
       <Header />
-      <Section />
-      <Category />
-      <JoinUs />
-      <News />
-      <OurApps />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   )
 }
