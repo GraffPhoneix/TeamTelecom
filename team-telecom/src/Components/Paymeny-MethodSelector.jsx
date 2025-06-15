@@ -1,0 +1,12 @@
+export default function MethodSelector() {
+  return (
+    <div>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Способы пополнения</h2>
+      <p className="text-sm text-gray-600 mb-4"> Вы можете использовать номер телефона или лицевой счёт для совершения оплаты.</p>
+      <div className="flex items-center space-x-4">
+        <button className="px-4 py-2 text-sm font-medium border border-red-600 text-red-600 rounded-lg hover:bg-red-50 transition">Номер телефона</button>
+        <button className="px-4 py-2 text-sm font-medium border border-red-300 text-red-600 rounded-lg hover:bg-red-50 transition">Лицевой счет</button>
+      </div>
+    </div>
+  );
+}

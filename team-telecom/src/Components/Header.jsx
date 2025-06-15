@@ -8,7 +8,7 @@ export default function Header() {
                 <nav className="hidden md:flex space-x-6 text-sm">
                     <a href='/' className="hover:text-red-600 cursor-pointer">Главная</a>
                     <a href='/register' className="hover:text-red-600 cursor-pointer">Регистрация</a>
-                    <a className="hover:text-red-600 cursor-pointer">Магазин</a>
+                    <a href='/payment' className="hover:text-red-600 cursor-pointer">Онлайн-платежи</a>
                     <a className="hover:text-red-600 cursor-pointer">Поддержка</a>
                     <a className="hover:text-red-600 cursor-pointer">Компания</a>
                 </nav>
