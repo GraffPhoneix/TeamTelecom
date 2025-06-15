@@ -6,8 +6,8 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="text-xl font-bold text-red-600">Telecom</div>
                 <nav className="hidden md:flex space-x-6 text-sm">
-                    <a className="hover:text-red-600 cursor-pointer">Главная</a>
-                    <a className="hover:text-red-600 cursor-pointer">Услуги</a>
+                    <a href='/' className="hover:text-red-600 cursor-pointer">Главная</a>
+                    <a href='/register' className="hover:text-red-600 cursor-pointer">Регистрация</a>
                     <a className="hover:text-red-600 cursor-pointer">Магазин</a>
                     <a className="hover:text-red-600 cursor-pointer">Поддержка</a>
                     <a className="hover:text-red-600 cursor-pointer">Компания</a>
