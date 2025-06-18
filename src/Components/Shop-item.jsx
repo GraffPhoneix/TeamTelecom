@@ -6,6 +6,7 @@ export default function ShopItem({ title, body, id, imgURL, price }) {
     const handleClick = () => {
         setStatus('in_busket');
         dataBase.products[id - 1].status = 'in_busket';
+        localStorage.setItem('dataBase', JSON.stringify(dataBase))
     };
     return (
         <div className="max-w-sm bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col items-center text-center" key={id}>

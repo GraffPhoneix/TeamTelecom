@@ -5,7 +5,8 @@ import Footer from './Components/Footer'
 import Home from './Routes/Home'
 import Register from './Routes/Register'
 import Payment from './Routes/Payment'
-import Shop from './Routes/Shop'   
+import Shop from './Routes/Shop'
+import Busket from './Routes/Busket'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='register' element={<Register />} />
         <Route path='payment' element={<Payment />} />
         <Route path='shop' element={<Shop />} />
+        <Route path='busket' element={<Busket />} />
       </Routes>
       <Footer />
     </Router>

@@ -67,5 +67,7 @@ const dataBase = {
         { id: 32, title: "Kodak Mini 3 Portable Printer", body: "Компактный фотопринтер – идеален для дома", price: "89,900 ֏", imgURL: img1, status: 'none' }
     ]
 };
-
-export default dataBase;
+if (JSON.parse(localStorage.getItem('dataBase')) === null) {
+    localStorage.setItem('dataBase', JSON.stringify(dataBase))
+}
+export default JSON.parse(localStorage.getItem('dataBase'));
