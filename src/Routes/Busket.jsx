@@ -15,8 +15,8 @@ export default function Busket() {
     const basketProducts = products.filter(product => product.status === 'in_busket');
 
     const removeFromBasket = (id) => {
-        setProducts(prev =>
-            prev.map(product =>
+        setProducts(el =>
+            el.map(product =>
                 product.id === id ? { ...product, status: 'none' } : product
             )
         );
@@ -29,7 +29,7 @@ export default function Busket() {
                     basketProducts.map(({ id, title, body, price, imgURL }) => (
                         <div key={id}>
                             <BusketItem id={id} title={title} price={price} imgURL={imgURL} />
-                            <button onClick={() => removeFromBasket(id)} className="mt-4 px-6 py-2 bg-red-500 text-white font-semibold rounded-xl shadow-md hover:bg-red-600 w-[100%] transition duration-200">Удалить из корзины</button>
+                            <button onClick={() => removeFromBasket(id)} className="mt-4 px-6 py-2 bg-red-500 text-white font-semibold rounded-xl shadow-md hover:bg-red-600 cursor-pointer w-[100%] transition duration-200">Удалить из корзины</button>
                         </div>
                     ))
                 ) : <p className="text-center text-gray-600 col-span-full">Ваша корзина пуста.</p>}

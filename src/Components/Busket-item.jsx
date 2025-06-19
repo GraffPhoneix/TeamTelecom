@@ -7,7 +7,7 @@ export default function BusketItem({ title, body, id, price, imgURL }) {
                 <p className="text-gray-600 flex-grow">{body}</p>
                 <div className="mt-4 flex items-center justify-between">
                     <span className="text-2xl font-bold text-red-600">{price}</span>
-                    <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">Купить</button>
+                    <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 cursor-pointer transition-colors">Купить</button>
                 </div>
             </div>
         </div>
