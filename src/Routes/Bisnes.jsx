@@ -2,6 +2,7 @@ import BisnesAdd from "../Components/Bisnes-add"
 import BsinesCategory from "../Components/Bisnes-Category"
 import BisnesSection from "../Components/Bisnes-Section"
 import TarifSlider from "../Components/Tarif-slider"
+import TeamNumber from "../Components/Team-Number"
 
 export default function Bisnes() {
     return (
@@ -13,6 +14,7 @@ export default function Bisnes() {
                     <TarifSlider />
                 </div>
                 <BsinesCategory />
+                <TeamNumber />
                 <BisnesAdd />
             </div>
         </div>

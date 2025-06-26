@@ -11,6 +11,10 @@ import bisnesPromo1 from './Img/Bisnes-Promo/img_1.png'
 import bisnesPromo2 from './Img/Bisnes-Promo/img_2.png'
 import bisnesPromo3 from './Img/Bisnes-Promo/img_3.png'
 import bisnesPromo4 from './Img/Bisnes-Promo/img_4.png'
+import shopPromo1 from './Img/Shop-Promo/img_1.png'
+import shopPromo2 from './Img/Shop-Promo/img_2.png'
+import shopPromo3 from './Img/Shop-Promo/img_3.png'
+import shopPromo4 from './Img/Shop-Promo/img_4.png'
 
 const dataBase = {
     categories: [
@@ -94,17 +98,23 @@ const dataBase = {
         { id: 3, title: 'Бизнес', body: 'Звонки на все сети США, Канады, Китая, РА и Beeline РФ', imgURL: slider3 },
     ],
     numbers: [
-        { type: 'ТОП', number: '033 87 55 55', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit' },
-        { type: 'ТОП', number: '033 87 22 22', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit' },
-        { type: 'НИКЕЛЬ', number: '033 74 00 82', price: '2 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree 1900' },
-        { type: 'СТАНДАРТ', number: '096 03 29 50', price: '0 ֏', subText: 'или 0 ֏ + 6 месяцев / BeFree 900' },
-        { type: 'СЕРЕБРО', number: '099 12 34 56', price: '5 000 ֏', subText: 'или 3 000 ֏ + 12 месяцев / BeFree Start / 1 500 ֏' },
-        { type: 'GOLD', number: '043 22 33 44', price: '80 000 ֏', subText: 'или 60 000 ֏ + 12 месяцев / BeFree Plus / 3 000 ֏' },
-        { type: 'ПРЕМИУМ', number: '077 77 77 88', price: '350 000 ֏', subText: 'или 250 000 ֏ + 12 месяцев / BeFree Unlimit' },
-        { type: 'СТАНДАРТ', number: '091 45 12 90', price: '0 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Light' },
-        { type: 'НИКЕЛЬ', number: '093 11 22 33', price: '1 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Basic' },
-        { type: 'ТОП', number: '044 44 44 44', price: '500 000 ֏', subText: 'или 300 000 ֏ + 12 месяцев / BeFree Unlimit' }
-    ]
+        { id: 1, type: 'ТОП', number: '033 87 55 55', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit', status: 'none' },
+        { id: 2, type: 'ТОП', number: '033 87 22 22', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit', status: 'none' },
+        { id: 3, type: 'НИКЕЛЬ', number: '033 74 00 82', price: '2 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree 1900', status: 'none' },
+        { id: 4, type: 'СТАНДАРТ', number: '096 03 29 50', price: '0 ֏', subText: 'или 0 ֏ + 6 месяцев / BeFree 900', status: 'none' },
+        { id: 5, type: 'СЕРЕБРО', number: '099 12 34 56', price: '5 000 ֏', subText: 'или 3 000 ֏ + 12 месяцев / BeFree Start / 1 500 ֏', status: 'none' },
+        { id: 6, type: 'GOLD', number: '043 22 33 44', price: '80 000 ֏', subText: 'или 60 000 ֏ + 12 месяцев / BeFree Plus / 3 000 ֏', status: 'none' },
+        { id: 7, type: 'ПРЕМИУМ', number: '077 77 77 88', price: '350 000 ֏', subText: 'или 250 000 ֏ + 12 месяцев / BeFree Unlimit', status: 'none' },
+        { id: 8, type: 'СТАНДАРТ', number: '091 45 12 90', price: '0 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Light', status: 'none' },
+        { id: 9, type: 'НИКЕЛЬ', number: '093 11 22 33', price: '1 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Basic', status: 'none' },
+        { id: 10, type: 'ТОП', number: '044 44 44 44', price: '500 000 ֏', subText: 'или 300 000 ֏ + 12 месяцев / BeFree Unlimit', status: 'none' }
+    ],
+    shopCategories: [
+        { id: 1, title: 'Удобство и комфорт', body: 'Покупайте так, как вам угодно!', imgURL: shopPromo1 },
+        { id: 2, title: 'Условия доставки', body: 'Доставка по всей территории Армении', imgURL: shopPromo2 },
+        { id: 3, title: 'Онлайн кредитование', body: 'Что это и как это работает?', imgURL: shopPromo3 },
+        { id: 4, title: 'Условия кредитования', body: 'ссЛучшие условия от Team', imgURL: shopPromo4 }
+    ],
 };
 
 if (JSON.parse(localStorage.getItem('dataBase')) === null) { localStorage.setItem('dataBase', JSON.stringify(dataBase)) }

@@ -1,5 +1,6 @@
 import ProductsSlider from '../Components/Products-slider';
 import ShopButtons from '../Components/Shop-buttons';
+import ShopCategory from '../Components/Shop-Category';
 import ShopNumbers from '../Components/Shop-Numbers';
 import ShopPsudoHeader from '../Components/Shop-PseudoHeader';
 
@@ -10,6 +11,7 @@ export default function Shop() {
             <ShopButtons />
             <ProductsSlider />
             <ShopNumbers />
+            <ShopCategory />
         </div>
     );
 }

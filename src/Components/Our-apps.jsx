@@ -1,17 +1,32 @@
-import appImg from '../Img/Our-app/img_1.png'
+import appImg from '../Img/Our-app/img_1.png';
 
 export default function OurApps() {
     return (
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 text-center mb-4 container">
-            <h2 className="text-2xl font-bold mb-2 text-gray-900">Приложение My Team</h2>
-            <p className="text-sm text-gray-600 mb-4">Установите My Team для iOS, Android, Mac, Windows</p>
-            <p className="text-gray-700 mb-6">Проводите платежи, получайте бонусы, шейкайте и пользуйтесь другими преимуществами.</p>
-            <img src={appImg} alt="App image" className='mb-4' />
-            <div className="flex justify-center space-x-4">
-                <a href="#" className="bg-green-600 text-white px-4 py-2 w-22 rounded-lg text-sm hover:bg-green-700 transition" aria-label="Download on the App Store" >iOS</a>
-                <a href="#" className="bg-green-600 text-white px-4 py-2 w-22 rounded-lg text-sm hover:bg-green-700 transition" aria-label="Download on Google Play" >Android</a>
-                <a href="#" className="bg-green-600 text-white px-4 py-2 w-22 rounded-lg text-sm hover:bg-green-700 transition" aria-label="Download on Google Play" >Mac</a>
-                <a href="#" className="bg-green-600 text-white px-4 py-2 w-22 rounded-lg text-sm hover:bg-green-700 transition" aria-label="Download on Google Play" >Windows</a>
+        <div className="w-full bg-[#F2F6FA] py-12">
+            <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+                {/* Image */}
+                <div className="w-full md:w-1/2 flex justify-center">
+                    <img src={appImg} alt="App" className="max-w-xs md:max-w-sm" />
+                </div>
+
+                {/* Text and Buttons */}
+                <div className="w-full md:w-1/2 text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B40] mb-4">
+                        Приложение <span className="text-[#00A79D]">My Team</span>
+                    </h2>
+                    <p className="text-[#6B7280] text-base mb-4">
+                        Установите My Team для iOS, Android, Mac, Windows
+                    </p>
+                    <p className="text-[#1B2B40] text-[16px] mb-6">
+                        Проводите платежи, получайте бонусы, шейкайте и пользуйтесь другими преимуществами.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                        <a href="#" className="bg-[#00A79D] text-white px-5 py-2 w-25 text-center rounded-lg text-sm font-medium hover:bg-[#00968C] transition">iOS</a>
+                        <a href="#" className="bg-[#00A79D] text-white px-5 py-2 w-25 text-center rounded-lg text-sm font-medium hover:bg-[#00968C] transition">Android</a>
+                        <a href="#" className="bg-[#00A79D] text-white px-5 py-2 w-25 text-center rounded-lg text-sm font-medium hover:bg-[#00968C] transition">Mac</a>
+                        <a href="#" className="bg-[#00A79D] text-white px-5 py-2 w-25 text-center rounded-lg text-sm font-medium hover:bg-[#00968C] transition">Windows</a>
+                    </div>
+                </div>
             </div>
         </div>
     );
