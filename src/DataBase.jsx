@@ -7,6 +7,10 @@ import slider2 from './Img/Slider/img_2.png';
 import slider3 from './Img/Slider/img_3.jpg';
 import slider4 from './Img/Slider/img_4.png';
 import img1 from './Img/News/img_1.png';
+import bisnesPromo1 from './Img/Bisnes-Promo/img_1.png'
+import bisnesPromo2 from './Img/Bisnes-Promo/img_2.png'
+import bisnesPromo3 from './Img/Bisnes-Promo/img_3.png'
+import bisnesPromo4 from './Img/Bisnes-Promo/img_4.png'
 
 const dataBase = {
     categories: [
@@ -65,9 +69,43 @@ const dataBase = {
         { id: 30, title: "Gigabyte AORUS", body: "Высокая производительность", price: "599,000 ֏", imgURL: img1, status: 'none' },
         { id: 31, title: "Honor X9c Smart 256 GB", body: "Умный выбор с отличным соотношением цена–качество", price: "104,900 ֏", imgURL: img1, status: 'none' },
         { id: 32, title: "Kodak Mini 3 Portable Printer", body: "Компактный фотопринтер – идеален для дома", price: "89,900 ֏", imgURL: img1, status: 'none' }
+    ],
+    tarifs: [
+        { title: 'Smart 1500', time1: '500 мин', time2: '100 мин', sms: '100 SMS', weight: '5 GB' },
+        { title: 'Smart 2500', time1: '800 мин', time2: '150 мин', sms: '200 SMS', weight: '7 GB' },
+        { title: 'Smart 3500', time1: '1 500 мин', time2: '200 мин', sms: '300 SMS', weight: '10 GB' },
+        { title: 'Smart 5500', time1: '10 000 мин', time2: '250 мин', sms: '500 SMS', weight: '12 GB' },
+        { title: 'Smart 7500', time1: 'Безлимит', time2: '300 мин', sms: '1000 SMS', weight: '25 GB' },
+        { title: 'Smart Pro 9500', time1: 'Безлимит', time2: '400 мин', sms: '1500 SMS', weight: '35 GB' },
+        { title: 'Smart Max 11500', time1: 'Безлимит', time2: '500 мин', sms: '2000 SMS', weight: '50 GB' },
+        { title: 'Business 15000', time1: 'Безлимит', time2: '800 мин', sms: '3000 SMS', weight: '75 GB' },
+        { title: 'VIP Connect 20000', time1: 'Безлимит', time2: '1000 мин', sms: 'Безлимит', weight: '100 GB' },
+        { title: 'Ultra Plus 25000', time1: 'Безлимит', time2: '1500 мин', sms: 'Безлимит', weight: '120 GB' },
+    ],
+    bisnesCategories: [
+        { id: 1, title: 'Корпоративные сети', body: 'Надежная система обмена информацией', imgURL: bisnesPromo1 },
+        { id: 2, title: 'Mobile ID', body: 'Платежи и идентификация с использованием мобильного телефона', imgURL: bisnesPromo2 },
+        { id: 3, title: 'TV', body: 'Любимые каналы и фильмы в высоком качестве.', imgURL: bisnesPromo3 },
+        { id: 4, title: 'M2M решения', body: 'Надежная передача данных', imgURL: bisnesPromo4 }
+    ],
+    bisnesSections: [
+        { id: 1, title: 'PRO', body: 'PROгрессивно PROдуктивно PROфессионално', imgURL: slider1 },
+        { id: 2, title: 'Подлючитесь', body: 'Опробуйте возможности и услуги БЕСПЛАТНО', imgURL: slider2 },
+        { id: 3, title: 'Бизнес', body: 'Звонки на все сети США, Канады, Китая, РА и Beeline РФ', imgURL: slider3 },
+    ],
+    numbers: [
+        { type: 'ТОП', number: '033 87 55 55', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit' },
+        { type: 'ТОП', number: '033 87 22 22', price: '210 000 ֏', subText: 'или 140 000 ֏ + 12 месяцев / BeFree Unlimit' },
+        { type: 'НИКЕЛЬ', number: '033 74 00 82', price: '2 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree 1900' },
+        { type: 'СТАНДАРТ', number: '096 03 29 50', price: '0 ֏', subText: 'или 0 ֏ + 6 месяцев / BeFree 900' },
+        { type: 'СЕРЕБРО', number: '099 12 34 56', price: '5 000 ֏', subText: 'или 3 000 ֏ + 12 месяцев / BeFree Start / 1 500 ֏' },
+        { type: 'GOLD', number: '043 22 33 44', price: '80 000 ֏', subText: 'или 60 000 ֏ + 12 месяцев / BeFree Plus / 3 000 ֏' },
+        { type: 'ПРЕМИУМ', number: '077 77 77 88', price: '350 000 ֏', subText: 'или 250 000 ֏ + 12 месяцев / BeFree Unlimit' },
+        { type: 'СТАНДАРТ', number: '091 45 12 90', price: '0 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Light' },
+        { type: 'НИКЕЛЬ', number: '093 11 22 33', price: '1 000 ֏', subText: 'или 0 ֏ + 12 месяцев / BeFree Basic' },
+        { type: 'ТОП', number: '044 44 44 44', price: '500 000 ֏', subText: 'или 300 000 ֏ + 12 месяцев / BeFree Unlimit' }
     ]
 };
-if (JSON.parse(localStorage.getItem('dataBase')) === null) {
-    localStorage.setItem('dataBase', JSON.stringify(dataBase))
-}
+
+if (JSON.parse(localStorage.getItem('dataBase')) === null) { localStorage.setItem('dataBase', JSON.stringify(dataBase)) }
 export default JSON.parse(localStorage.getItem('dataBase'));
