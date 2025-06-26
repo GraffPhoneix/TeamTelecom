@@ -23,7 +23,7 @@ export default function BisnesAdd() {
                 <div></div>
             </div>
             <div className="flex justify-center">
-                <button className="bg-white font-semibold text-red-600 p-2 rounded-3xl w-60 mt-2.5 mb-2.5 text-center">Подробнее</button>
+                <button className="bg-white font-semibold text-red-600 p-2 rounded-3xl w-60 mt-2.5 mb-2.5 text-center hover:cursor-pointer">Подробнее</button>
             </div>
         </div>
     );
