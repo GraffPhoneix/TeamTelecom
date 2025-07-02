@@ -4,12 +4,9 @@ export default function OurApps() {
     return (
         <div className="w-full bg-[#F2F6FA] py-12">
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
-                {/* Image */}
                 <div className="w-full md:w-1/2 flex justify-center">
                     <img src={appImg} alt="App" className="max-w-xs md:max-w-sm" />
                 </div>
-
-                {/* Text and Buttons */}
                 <div className="w-full md:w-1/2 text-left">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B40] mb-4">
                         Приложение <span className="text-[#00A79D]">My Team</span>
