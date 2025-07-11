@@ -8,19 +8,9 @@ export default function RegisterForm() {
     const [surname, setSurname] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (
-            fullName.trim().length <= 5 ||
-            surname.trim().length <= 5 ||
-            username.trim().length <= 5 ||
-            Number(password) <= 9999
-        ) {
-            setError("Все поля должны содержать больше 5 символов, а пароль — быть пятизначним и более.");
-            return;
-        }
 
         const user = {
             name: fullName,
@@ -40,11 +30,9 @@ export default function RegisterForm() {
             DataBase.me = user;
             localStorage.setItem("dataBase", JSON.stringify(DataBase));
 
-            setError("");
-            console.log("Пользователь зарегистрирован");
+            console.log("Пользователь успешно добавлен!");
         } catch (error) {
-            console.error("Ошибка регистрации:", error);
-            setError("Произошла ошибка при регистрации. Попробуйте снова.");
+            console.error("Ошибка при сохранении пользователя:", error);
         }
     };
 
@@ -97,12 +85,6 @@ export default function RegisterForm() {
                     />
                 </div>
                 <button type="submit" className="border-red-500 w-full transition border-2 hover:bg-red-500 hover:text-white mt-7 cursor-pointer text-red-600 text-sm font-medium px-4 py-2 rounded-4xl">Зарегистрироваться</button>
-
-                {error && (
-                    <p className="mt-4 text-center text-sm text-red-600 font-medium">
-                        {error}
-                    </p>
-                )}
             </form>
         </div>
     );
