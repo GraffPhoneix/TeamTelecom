@@ -1,6 +1,5 @@
-// src/components/ProductsSlider.js
 import { useEffect, useState } from 'react';
-import { fetchData } from '../firebase'; // Reuse the fetchData function
+import { fetchData } from '../firebase';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
