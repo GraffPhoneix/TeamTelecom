@@ -7,6 +7,7 @@ import Shop from './Routes/Shop'
 import Busket from './Routes/Busket'
 import Bisnes from './Routes/Bisnes'
 import Register from './Routes/Register'
+import Chat from './Routes/Chat'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path='busket' element={<Busket />} />
         <Route path='bisnes' element={<Bisnes />} />
         <Route path='register' element={<Register />} />
+        <Route path='chat' element={<Chat />} />
       </Routes>
       <Footer />
     </Router>

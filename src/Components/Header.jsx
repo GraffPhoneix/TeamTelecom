@@ -8,6 +8,7 @@ export default function Header() {
                     <a href='/shop' className="text-white hover:text-red-600 cursor-pointer py-2">E-shop</a>
                     <a href='/busket' className="text-white hover:text-red-600 cursor-pointer py-2">Корзина</a>
                     <a href='/register' className="text-white hover:text-red-600 cursor-pointer py-2">Личный кабинет</a>
+                    <a href='/chat' className="text-white hover:text-red-600 cursor-pointer py-2">Чат</a>
                 </nav>
                 <div className="flex items-center space-x-4">
                     <button className="text-white text-sm hover:text-red-600 cursor-pointer py-2">AM</button>
