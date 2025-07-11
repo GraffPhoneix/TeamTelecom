@@ -36,6 +36,7 @@ const dataBase = {
         { id: 31, title: "Honor X9c Smart 256 GB", body: "Умный выбор с отличным соотношением цена–качество", price: "104,900 ֏", imgURL: img1, status: 'none' },
         { id: 32, title: "Kodak Mini 3 Portable Printer", body: "Компактный фотопринтер – идеален для дома", price: "89,900 ֏", imgURL: img1, status: 'none' }
     ],
+    isLogined: false
 };
 
 if (JSON.parse(localStorage.getItem('dataBase')) === null) { localStorage.setItem('dataBase', JSON.stringify(dataBase)) }

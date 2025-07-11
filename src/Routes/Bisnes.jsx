@@ -3,8 +3,10 @@ import BsinesCategory from "../Components/Bisnes-Category"
 import BisnesSection from "../Components/Bisnes-Section"
 import TarifSlider from "../Components/Tarif-slider"
 import TeamNumber from "../Components/Team-Number"
+import isLogined from '../Components/isLogined'
 
 export default function Bisnes() {
+    isLogined()
     return (
         <div>
             <BisnesSection />
