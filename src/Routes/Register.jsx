@@ -29,6 +29,7 @@ export default function RegisterForm() {
             DataBase.isLogined = true;
             DataBase.me = user;
             localStorage.setItem("dataBase", JSON.stringify(DataBase));
+            location.href = 'http://localhost:5173/'
 
             console.log("Пользователь успешно добавлен!");
         } catch (error) {

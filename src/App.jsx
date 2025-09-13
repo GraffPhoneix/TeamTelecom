@@ -8,11 +8,14 @@ import Busket from './Routes/Busket'
 import Bisnes from './Routes/Bisnes'
 import Register from './Routes/Register'
 import Chat from './Routes/Chat'
+import Mobile from './Routes/Mobile'
+import PseudoHeader from './Components/pseudo_header'
 
 export default function App() {
   return (
     <Router>
       <Header />
+      <PseudoHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='shop' element={<Shop />} />
@@ -20,6 +23,7 @@ export default function App() {
         <Route path='bisnes' element={<Bisnes />} />
         <Route path='register' element={<Register />} />
         <Route path='chat' element={<Chat />} />
+        <Route path='mobile' element={<Mobile />} />
       </Routes>
       <Footer />
     </Router>
