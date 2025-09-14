@@ -10,6 +10,7 @@ import Register from './Routes/Register'
 import Chat from './Routes/Chat'
 import Mobile from './Routes/Mobile'
 import PseudoHeader from './Components/pseudo_header'
+import Smartphones from './Routes/Smartphones'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='register' element={<Register />} />
         <Route path='chat' element={<Chat />} />
         <Route path='mobile' element={<Mobile />} />
+        <Route path='smartphones' element={<Smartphones />} />
       </Routes>
       <Footer />
     </Router>

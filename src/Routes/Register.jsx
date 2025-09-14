@@ -4,6 +4,9 @@ import { ref, get } from "firebase/database";
 import DataBase from "../DataBase";
 
 export default function RegisterForm() {
+    if (DataBase.isLogined) {
+        location.href = 'http://localhost:5173/'
+    }
     const [fullName, setFullName] = useState("");
     const [surname, setSurname] = useState("");
     const [username, setUsername] = useState("");

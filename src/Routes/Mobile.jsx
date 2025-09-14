@@ -1,7 +1,9 @@
 import img_1 from '../Img/Mobile/img_1.jpg'
 import { ChevronDown } from "lucide-react";
+import isLogined from '../Components/isLogined'
 
 export default function Mobile() {
+    isLogined()
     return (
         <div>
             <div className="bg-center min-h-[300px]" style={{ backgroundImage: `url(${img_1})` }}></div>

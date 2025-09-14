@@ -36,6 +36,27 @@ const dataBase = {
         { id: 31, title: "Honor X9c Smart 256 GB", body: "Умный выбор с отличным соотношением цена–качество", price: "104,900 ֏", imgURL: img1, status: 'none' },
         { id: 32, title: "Kodak Mini 3 Portable Printer", body: "Компактный фотопринтер – идеален для дома", price: "89,900 ֏", imgURL: img1, status: 'none' }
     ],
+    smartphones: {
+        unlimited: [
+            { header: 'Video Unlimit', title: 'Подключи и наслаждайся безлимитными видео!' },
+            { header: 'Music Unlimit', title: 'Подключи и наслаждайся безлимитной музыкой' },
+            { header: 'Social Unlimit', title: 'Подключи и наслаждайся безлимитными социальными сетями' },
+            { header: 'Messenger Unlimit', title: 'Подключи и наслаждайся безлимитными мессенджерами' }
+        ],
+        giga: [
+            { header: 'Giga 1+1ГБ', title: 'Высокоскоростной интернет-пакет для смартфона' },
+            { header: 'Giga 2+1ГБ', title: 'Высокоскоростной интернет-пакет для смартфона' },
+            { header: 'Giga 5+1ГБ', title: 'Высокоскоростной интернет-пакет для смартфона' },
+            { header: 'Giga 10 ГБ', title: 'Высокоскоростной интернет-пакет для смартфона' }
+        ],
+        mega: [
+            { header: 'Mega 300+', title: 'Ежедневный Интернет для смартфона: баланс больше не обнуляется.' },
+            { header: 'Mega 500+', title: 'Ежедневный Интернет для смартфона: баланс больше не обнуляется.' },
+            { header: 'Mega 300', title: 'Ежедневный Интернет для смартфона.' },
+            { header: 'Mega 500', title: 'Ежедневный Интернет для смартфона.' }
+        ]
+    },
+
     isLogined: false
 };
 
