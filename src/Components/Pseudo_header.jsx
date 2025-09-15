@@ -5,9 +5,9 @@ export default function PseudoHeader() {
                 <nav className="hidden md:flex space-x-6 text-sm">
                     <a href='/mobile' className="text-black hover:text-red-600 cursor-pointer py-2.5">Моблиная связь</a>
                     <a href='/smartphones' className="text-black hover:text-red-600 cursor-pointer py-2.5">Интернет</a>
-                    <a href='/' className="text-black hover:text-red-600 cursor-pointer py-2.5">Услуги</a>
-                    <a href='/' className="text-black hover:text-red-600 cursor-pointer py-2.5">Роуминг</a>
-                    <a className="text-black hover:text-red-600 cursor-pointer py-2.5">Помошь</a>
+                    <a href='/payment-services' className="text-black hover:text-red-600 cursor-pointer py-2.5">Платежи и пополнения</a>
+                    <a href='/' className="text-black hover:text-red-600 cursor-pointer py-2.5">...</a>
+                    <a className="text-black hover:text-red-600 cursor-pointer py-2.5">...</a>
                 </nav>
             </div>
         </header>

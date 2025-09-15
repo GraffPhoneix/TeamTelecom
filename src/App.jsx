@@ -11,6 +11,7 @@ import Chat from './Routes/Chat'
 import Mobile from './Routes/Mobile'
 import PseudoHeader from './Components/pseudo_header'
 import Smartphones from './Routes/Smartphones'
+import PaymentServices from './Routes/Payment-Services'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path='chat' element={<Chat />} />
         <Route path='mobile' element={<Mobile />} />
         <Route path='smartphones' element={<Smartphones />} />
+        <Route path='payment-services' element={<PaymentServices />} />
       </Routes>
       <Footer />
     </Router>
