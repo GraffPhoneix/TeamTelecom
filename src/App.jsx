@@ -12,6 +12,7 @@ import Mobile from './Routes/Mobile'
 import PseudoHeader from './Components/pseudo_header'
 import Smartphones from './Routes/Smartphones'
 import PaymentServices from './Routes/Payment-Services'
+import Roaming from './Routes/Roaming'
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path='mobile' element={<Mobile />} />
         <Route path='smartphones' element={<Smartphones />} />
         <Route path='payment-services' element={<PaymentServices />} />
+        <Route path='roaming' element={<Roaming />} />
       </Routes>
       <Footer />
     </Router>
