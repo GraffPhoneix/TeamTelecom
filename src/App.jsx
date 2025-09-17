@@ -13,6 +13,7 @@ import PseudoHeader from './Components/pseudo_header'
 import Smartphones from './Routes/Smartphones'
 import PaymentServices from './Routes/Payment-Services'
 import Roaming from './Routes/Roaming'
+import Login from './Routes/Login'
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path='smartphones' element={<Smartphones />} />
         <Route path='payment-services' element={<PaymentServices />} />
         <Route path='roaming' element={<Roaming />} />
+        <Route path='login' element={<Login />} />
       </Routes>
       <Footer />
     </Router>

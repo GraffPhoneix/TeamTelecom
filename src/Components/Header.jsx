@@ -7,7 +7,7 @@ export default function Header() {
                     <a href='/bisnes' className="text-white hover:text-red-500 cursor-pointer py-2.5 font-medium">Бизнесу</a>
                     <a href='/shop' className="text-white hover:text-red-500 cursor-pointer py-2.5 font-medium">E-shop</a>
                     <a href='/busket' className="text-white hover:text-red-500 cursor-pointer py-2.5 font-medium">Корзина</a>
-                    {/* <a className="text-white hover:text-red-500 cursor-pointer line-through py-2.5 font-medium">Регистрация</a> */}
+                    <a href="/login" className="text-white hover:text-red-500 cursor-pointer py-2.5 font-medium">Вход в аккаунт</a>
                     <a href='/chat' className="text-white hover:text-red-500 cursor-pointer py-2.5 font-medium">Чат</a>
                 </nav>
                 <div className="flex items-center space-x-4">

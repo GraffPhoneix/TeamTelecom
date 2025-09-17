@@ -92,6 +92,10 @@ export default function RegisterForm() {
                     </div>
                     <button type="submit" className="w-full py-3 mt-4 rounded-xl font-semibold text-white text-lg shadow-lg bg-gradient-to-r from-red-500 to-pink-600 hover:from-pink-600 hover:to-red-500 cursor-pointer transition-transform transform hover:scale-[1.02] active:scale-95">Зарегистрироваться</button>
                 </form>
+                <div className="mt-4 text-center text-sm">
+                    <span className="text-gray-600">Уже есть аккаунт? </span>
+                    <a href="/login" className="font-semibold text-blue-600 hover:text-blue-800 hover:underline transition">Вход в аккаунт</a>
+                </div>
             </div>
         </div>
     );
