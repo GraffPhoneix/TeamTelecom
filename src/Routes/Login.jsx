@@ -22,7 +22,6 @@ export default function Login() {
         );
 
         if (user) {
-            console.log("✅ Login success:", user);
             DataBase.isLogined = true;
             DataBase.me = user;
             localStorage.setItem("dataBase", JSON.stringify(DataBase));
