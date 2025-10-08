@@ -12,7 +12,7 @@ export default function Bisnes() {
             <BisnesSection />
             <div>
                 <div>
-                    <div className="font-semibold mt-4 ml-160 text-3xl">Тарифы мобильной связи</div>
+                    <div className="font-bold ml-65 mt-10 text-4xl text-[#2c3843]">Тарифы мобильной связи</div>
                     <TarifSlider />
                 </div>
                 <BsinesCategory />

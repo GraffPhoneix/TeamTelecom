@@ -1,38 +1,53 @@
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-gray-300 py-10">
-            <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Компания</h4>
-                    <ul className="space-y-2 text-sm">
-                        <li><a href="#" className="hover:text-white">О нас</a></li>
-                        <li><a href="#" className="hover:text-white">Карьера</a></li>
-                        <li><a href="#" className="hover:text-white">Новости</a></li>
+        <footer className="bg-[#01415f] pt-10">
+            <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+                <div className="ml-30">
+                    <img src="https://www.telecomarmenia.am/files/icons/1/16511388037707/45x45.png" alt="logo" className="mb-2" />
+                    <h4 className="text-lg font-semibold mb-4 text-white">О компании</h4>
+                    <ul className="space-y-3.5 text-sm">
+                        <li><a href="#" className="text-gray-300 hover:underline">О нас</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Музей связи</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Новости</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Работа в Телеком Армения</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Результаты и отчётность</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Комплаенс и Деловая этика</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Акционерам</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Поддержка</h4>
+                <div className="ml-30">
+                    <img src="https://www.telecomarmenia.am/files/icons/1/16511387478667/45x45.png" alt="logo" className="mb-2" />
+                    <h4 className="text-lg font-semibold mb-4 text-white">Информация</h4>
                     <ul className="space-y-2 text-sm">
-                        <li><a href="#" className="hover:text-white">Контакты</a></li>
-                        <li><a href="#" className="hover:text-white">Помощь</a></li>
-                        <li><a href="#" className="hover:text-white">Документы</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Общие положения и условия</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Безопасность</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">E-shop условия</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Условия кредитования</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Условия доставки</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Центры продаж и обслуживания</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Покрытие</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Зоны покрытия мобильной сети</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Зоны доступности интернета Team</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Полезные документы</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Партнерам и поставщикам</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Политика конфиденциальности</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Коды регионов Армении</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Услуги</h4>
+                <div className="ml-30">
+                    <img src="https://www.telecomarmenia.am/files/icons/1/16511387748123/45x45.png" alt="logo" className="mb-2" />
+                    <h4 className="text-lg font-semibold mb-4 text-white">Приложения Team</h4>
                     <ul className="space-y-2 text-sm">
-                        <li><a href="#" className="hover:text-white">Интернет</a></li>
-                        <li><a href="#" className="hover:text-white">Мобильная связь</a></li>
-                        <li><a href="#" className="hover:text-white">TV</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">TeamTV</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">My Team</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Team Pay</a></li>
+                        <li><a href="#" className="text-gray-300 hover:underline">Team Energy</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Подписка</h4>
-                    <p className="text-sm mb-4">Получайте обновления и спецпредложения первыми.</p>
-                    <input type="email" placeholder="Ваш email" className="w-full px-3 py-2 rounded-md text-gray-900" />
                 </div>
             </div>
-            <div className="text-center mt-10 text-sm text-gray-500">&copy; 2025 Telecom. Все права защищены.</div>
+            <div className="bg-[#022739] mt-10">
+                <div className="text-center text-sm text-white py-2.5">&copy; 2025 Telecom. Все права защищены.</div>
+            </div>
         </footer>
     )
 }
