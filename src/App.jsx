@@ -14,6 +14,7 @@ import Smartphones from './Routes/Smartphones'
 import PaymentServices from './Routes/Payment-Services'
 import Roaming from './Routes/Roaming'
 import Login from './Routes/Login'
+import NoPage from './Components/No-page'
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path='payment-services' element={<PaymentServices />} />
         <Route path='roaming' element={<Roaming />} />
         <Route path='login' element={<Login />} />
+        <Route path='*' element={<NoPage />} />
       </Routes>
       <Footer />
     </Router>
