@@ -1,13 +1,19 @@
-import Category_1 from '../Img/Slider/img_4.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import DataBase from '../DataBase';
 
-export default function ShopPsudoHeader({ title, body, imgURL }) {
+export default function ShopPsudoHeader() {
     return (
-        <div className="relative text-white p-6 border rounded-2xl bg-cover bg-center hover:shadow-md w-full h-150 flex items-center justify-center" style={{ backgroundImage: `url(${Category_1})` }}>
-            <div className="bg-white/20 backdrop-blur-md p-10 rounded shadow-lg max-w-md text-center">
-                <h3 className="text-2xl font-bold mb-2 text-gray-900">Sony Smart TV</h3>
-                <p className="text-gray-800 text-medium">Пакеты COSMO/COMBO</p>
-                <button className='rounded-xl bg-red-400 p-1.5 w-60 mt-5 transition hover:bg-red-500 cursor-pointer'>Подробнее</button>
-            </div>
+        <div className="w-full bg-white py-4">
+            <Swiper modules={[Navigation, Autoplay]} spaceBetween={20} slidesPerView={1} navigation autoplay={{ delay: 3000, disableOnInteraction: false }} loop className="max-w-5xl mx-auto">
+                {DataBase.shop_pseudo_header_images.map((el, i) => (
+                    <SwiperSlide key={i}>
+                        <img src={el} alt={`slide-${i}`} className="w-130 h-130 object-cover flex ml-70" />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
     );
 }

@@ -1,40 +1,187 @@
 import img1 from './Img/News/img_1.png';
 
-
 const dataBase = {
-    products: [
-        { id: 1, title: "iPhone 15 Pro", body: "Новинка с отличными характеристиками", price: "459,000 ֏", imgURL: img1, status: 'none' },
-        { id: 2, title: "Samsung Galaxy S24", body: "Высокая производительность", price: "412,000 ֏", imgURL: img1, status: 'none' },
-        { id: 3, title: "Xiaomi Redmi Note 13", body: "Оптимальное соотношение цена/качество", price: "189,000 ֏", imgURL: img1, status: 'none' },
-        { id: 4, title: "AirPods Pro", body: "Беспроводные наушники с шумоподавлением", price: "99,000 ֏", imgURL: img1, status: 'none' },
-        { id: 5, title: "Smart Watch Huawei", body: "Умные часы с мониторингом здоровья", price: "59,000 ֏", imgURL: img1, status: 'none' },
-        { id: 6, title: "Sony Bluetooth Speaker", body: "Мощная портативная акустика", price: "75,000 ֏", imgURL: img1, status: 'none' },
-        { id: 7, title: "MacBook Air M2", body: "Новый уровень производительности", price: "779,000 ֏", imgURL: img1, status: 'none' },
-        { id: 8, title: "ASUS Gaming Laptop", body: "Мощный ноутбук для игр и работы", price: "659,000 ֏", imgURL: img1, status: 'none' },
-        { id: 9, title: "JBL Tune 510BT", body: "Беспроводные наушники", price: "34,900 ֏", imgURL: img1, status: 'none' },
-        { id: 10, title: "HP Laser Printer", body: "Быстрая и надёжная печать", price: "139,000 ֏", imgURL: img1, status: 'none' },
-        { id: 11, title: "Canon DSLR Camera", body: "Профессиональная фотосъёмка", price: "329,000 ֏", imgURL: img1, status: 'none' },
-        { id: 12, title: "LG Smart TV 55\"", body: "Ультра HD и webOS", price: "499,000 ֏", imgURL: img1, status: 'none' },
-        { id: 13, title: "Xiaomi TV Box", body: "Преврати телевизор в Smart TV", price: "42,000 ֏", imgURL: img1, status: 'none' },
-        { id: 14, title: "TP-Link Wi-Fi Router", body: "Скоростной интернет по всему дому", price: "29,900 ֏", imgURL: img1, status: 'none' },
-        { id: 15, title: "Lenovo Tablet", body: "Идеален для мультимедиа", price: "179,000 ֏", imgURL: img1, status: 'none' },
-        { id: 16, title: "External SSD 1TB", body: "Скоростное хранение данных", price: "89,000 ֏", imgURL: img1, status: 'none' },
-        { id: 17, title: "Team Combo Box", body: "Набор устройств с выгодой", price: "349,000 ֏", imgURL: img1, status: 'none' },
-        { id: 18, title: "Philips LED Monitor", body: "Чёткое изображение и широкие углы обзора", price: "145,000 ֏", imgURL: img1, status: 'none' },
-        { id: 19, title: "Beats Studio Pro", body: "Звук профессионального уровня", price: "125,000 ֏", imgURL: img1, status: 'none' },
-        { id: 20, title: "Power Bank 20,000mAh", body: "Надёжная подзарядка в пути", price: "22,900 ֏", imgURL: img1, status: 'none' },
-        { id: 21, title: "Smart Light Bulb", body: "Управление светом с телефона", price: "9,900 ֏", imgURL: img1, status: 'none' },
-        { id: 22, title: "Mi Band 7", body: "Фитнес-браслет с OLED-дисплеем", price: "18,900 ֏", imgURL: img1, status: 'none' },
-        { id: 23, title: "Apple Pencil", body: "Точное рисование и заметки", price: "49,000 ֏", imgURL: img1, status: 'none' },
-        { id: 24, title: "Gamepad PS5 DualSense", body: "Беспроводной контроллер нового поколения", price: "45,000 ֏", imgURL: img1, status: 'none' },
-        { id: 25, title: "Logitech Wireless Mouse", body: "Комфорт и точность", price: "12,900 ֏", imgURL: img1, status: 'none' },
-        { id: 26, title: "Dell USB-C Hub", body: "Расширение возможностей ноутбука", price: "26,000 ֏", imgURL: img1, status: 'none' },
-        { id: 27, title: "SanDisk Flash 128GB", body: "Компактная и быстрая флешка", price: "14,000 ֏", imgURL: img1, status: 'none' },
-        { id: 28, title: "HDMI Cable 2m", body: "Надёжное соединение без потерь", price: "4,500 ֏", imgURL: img1, status: 'none' },
-        { id: 29, title: "Razer Gaming Keyboard", body: "Подсветка и высокая отзывчивость", price: "69,000 ֏", imgURL: img1, status: 'none' },
-        { id: 30, title: "Gigabyte AORUS", body: "Высокая производительность", price: "599,000 ֏", imgURL: img1, status: 'none' },
-        { id: 31, title: "Honor X9c Smart 256 GB", body: "Умный выбор с отличным соотношением цена–качество", price: "104,900 ֏", imgURL: img1, status: 'none' },
-        { id: 32, title: "Kodak Mini 3 Portable Printer", body: "Компактный фотопринтер – идеален для дома", price: "89,900 ֏", imgURL: img1, status: 'none' }
+    "products": [
+        {
+            "body": "Начиная с 10,220 ֏/месяц",
+            "id": 1,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17582143854401/245x280c-center.jpeg",
+            "price": "619, 000 ֏",
+            "status": "none",
+            "title": "Apple iPhone 17 Pro | 256 GB",
+            "type": "#gadget"
+        },
+        {
+            "body": "",
+            "id": 2,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17570544322496/245x280c-center.jpeg",
+            "price": "49, 900 ֏",
+            "status": "none",
+            "title": "Планшет Oscal Pad 60 Kids 10.1 | 128 GB",
+            "type": "#gadget"
+        },
+        {
+            "body": "",
+            "id": 3,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17524934280155/245x280c-center.jpeg",
+            "price": "119,900 ֏",
+            "status": "none",
+            "title": "Динамик Harman Kardon Onyx Studio 8 ",
+            "type": "#gadget"
+        },
+        {
+            "body": "",
+            "id": 4,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17524766853044/245x280c-center.png",
+            "price": "157,900 ֏",
+            "status": "none",
+            "title": "Планшет Huawei MatePad 11.5\" S (inbox keyboard) | 256 GB",
+            "type": "#gadget"
+        },
+        {
+            "body": "",
+            "id": 5,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17522148205563/245x280c-center.jpeg",
+            "price": "107,900 ֏",
+            "status": "none",
+            "title": "Планшет Huawei MatePad 11.5\" S (inbox keyboard) | 128 GB",
+            "type": "#gadget"
+        },
+        {
+            "body": "",
+            "id": 6,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17524788824632/245x280c-center.jpeg",
+            "price": "215,900 ֏",
+            "status": "none",
+            "title": "Акустическая система JBL Authentics 300 ",
+            "type": "#gadget"
+        },
+        {
+            "body": "Стоимость кредита 336,900 ֏ | Начиная с 5,620 ֏/месяц",
+            "id": 7,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17528413887295/245x280c-center.png",
+            "price": "302,900 ֏",
+            "status": "none",
+            "title": "Samsung Galaxy  Z Flip7 FE | 128 GB",
+            "type": "#gadget"
+        },
+        {
+            "body": "Мощный ноутбук для игр и работы",
+            "id": 8,
+            "imgURL": "https://www.telecomarmenia.am/images/product/11/17587923509643/245x280c-center.png",
+            "price": "659,000 ֏",
+            "status": "none",
+            "title": "ASUS Gaming Laptop",
+            "type": "#gadget"
+        },
+        {
+            "body": "Беспроводные наушники",
+            "id": 9,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17582169481666/245x280c-center.jpeg",
+            "price": "34,900 ֏",
+            "status": "none",
+            "title": "JBL Tune 510BT",
+            "type": "#gadget"
+        },
+        {
+            "body": "Быстрая и надёжная печать",
+            "id": 10,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17528310863219/245x280c-center.png",
+            "price": "139,000 ֏",
+            "status": "none",
+            "title": "HP Laser Printer",
+            "type": "#gadget"
+        },
+        {
+            "body": "Профессиональная фотосъёмка",
+            "id": 11,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17528365117377/245x280c-center.png",
+            "price": "329,000 ֏",
+            "status": "none",
+            "title": "Canon DSLR Camera",
+            "type": "#gadget"
+        },
+        {
+            "body": "Ультра HD и webOS",
+            "id": 12,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17524960690751/245x280c-center.jpeg",
+            "price": "499,000 ֏",
+            "status": "none",
+            "title": "LG Smart TV 55\"",
+            "type": "#gadget"
+        },
+        {
+            "body": "Преврати телевизор в Smart TV",
+            "id": 13,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17521515734/245x280c-center.jpeg",
+            "price": "42,000 ֏",
+            "status": "none",
+            "title": "Xiaomi TV Box",
+            "type": "#gadget"
+        },
+        {
+            "body": "Скоростной интернет по всему дому",
+            "id": 14,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17522175601354/245x280c-center.png",
+            "price": "29,900 ֏",
+            "status": "none",
+            "title": "TP-Link Wi-Fi Router",
+            "type": "#gadget"
+        },
+        {
+            "body": "Идеален для мультимедиа",
+            "id": 15,
+            "imgURL": "https://www.telecomarmenia.am/images/product/11/17582743023288/245x280c-center.jpeg",
+            "price": "179,000 ֏",
+            "status": "none",
+            "title": "Lenovo Tablet",
+            "type": "#gadget"
+        },
+        {
+            "body": "Скоростное хранение данных",
+            "id": 16,
+            "imgURL": "https://www.telecomarmenia.am/images/product/11/17582714803166/245x280c-center.jpeg",
+            "price": "89,000 ֏",
+            "status": "none",
+            "title": "External SSD 1TB",
+            "type": "#gadget"
+        },
+        {
+            "body": "Набор устройств с выгодой",
+            "id": 17,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/17582000607926/245x280c-center.jpeg",
+            "price": "349,000 ֏",
+            "status": "none",
+            "title": "Team Combo Box",
+            "type": "#gadget"
+        },
+        {
+            "body": "Чёткое изображение и широкие углы обзора",
+            "id": 18,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/1752147048216/245x280c-center.png",
+            "price": "145,000 ֏",
+            "status": "none",
+            "title": "Philips LED Monitor",
+            "type": "#gadget"
+        },
+        {
+            "body": "Звук профессионального уровня",
+            "id": 19,
+            "imgURL": "https://www.telecomarmenia.am/images/product/10/1758215139752/245x280c-center.jpeg",
+            "price": "125,000 ֏",
+            "status": "none",
+            "title": "Beats Studio Pro",
+            "type": "#gadget"
+        },
+        {
+            "body": "Надёжная подзарядка в пути",
+            "id": 20,
+            "imgURL": "https://www.telecomarmenia.am/images/product/11/17582734427687/245x280c-center.jpeg",
+            "price": "22,900 ֏",
+            "status": "none",
+            "title": "Power Bank 20,000mAh",
+            "type": "#gadget"
+        }
     ],
     smartphones: {
         unlimited: [
@@ -66,7 +213,8 @@ const dataBase = {
         { header: 'Условия подключения роуминга', title: `                                       .` },
         { header: 'Тарифы роуминга на море и в воздухе', title: 'Будьте онлайн, даже на море и в воздухе' }
     ],
-    isLogined: false
+    isLogined: false,
+    shop_pseudo_header_images: ['https://www.telecomarmenia.am/images/advanced_slider/2/17591324480321.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321353964.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321199707.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321075712.png']
 };
 
 if (JSON.parse(localStorage.getItem('dataBase')) === null) { localStorage.setItem('dataBase', JSON.stringify(dataBase)) }

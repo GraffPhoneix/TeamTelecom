@@ -15,7 +15,6 @@ export default function ProductsSlider() {
     return (
         <div className="bg-gray-100 px-4 py-10">
             <div className="max-w-7xl mx-auto">
-                <h1 className="text-3xl font-bold text-gray-800 mb-6">Магазин</h1>
                 <Swiper modules={[Navigation, Pagination]} spaceBetween={20} slidesPerView={1} breakpoints={{ 640: { slidesPerView: 2 }, 768: { slidesPerView: 3 }, 1024: { slidesPerView: 4 }, }} navigation pagination={{ clickable: true }}>
                     {filteredProducts.map((product) => (
                         <SwiperSlide key={product.id}>
