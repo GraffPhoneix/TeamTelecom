@@ -13,8 +13,7 @@ export default function PseudoHeader() {
                     <a href='/roaming' className="text-black hover:text-red-600 py-3.5">Роуминг</a>
                 </nav>
                 <a href='/busket' className="text-black hover:text-red-600 py-3.5 flex items-center">
-                    {/* <img src="" alt="busket" className="w-6 h-6" /> */}
-                    <span className="text-md font-bold text-[#2c3843] ml-2">🛒 {productsInBusket}</span>
+                    <span className="text-md font-semibold text-[#2c3843] ml-2">Товаров в корзине:{productsInBusket}</span>
                 </a>
             </div>
         </header>

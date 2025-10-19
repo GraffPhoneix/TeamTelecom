@@ -13,7 +13,6 @@ import PseudoHeader from './Components/pseudo_header'
 import Smartphones from './Routes/Smartphones'
 import PaymentServices from './Routes/Payment-Services'
 import Roaming from './Routes/Roaming'
-import Login from './Routes/Login'
 import NoPage from './Components/No-page'
 import MyCabinet from './Routes/My-Cabinet'
 
@@ -33,7 +32,7 @@ export default function App() {
         <Route path='smartphones' element={<Smartphones />} />
         <Route path='payment-services' element={<PaymentServices />} />
         <Route path='roaming' element={<Roaming />} />
-        <Route path='login' element={<Login />} />
+        <Route path='login' element={<MyCabinet />} />
         <Route path='mycabinet' element={<MyCabinet />} /> 
         <Route path='*' element={<NoPage />} />
       </Routes>
