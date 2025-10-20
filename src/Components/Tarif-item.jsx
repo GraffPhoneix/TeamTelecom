@@ -1,7 +1,7 @@
 export default function TarifItem({ title, time1, time2, sms, weight }) {
     return (
-        <div className="bg-[#f5f7fa] border border-[#d8e1ec] shadow-md w-80 h-100 rounded-2xl m-10 p-5 flex flex-col justify-between transition hover:scale-115">
-            <h3 className="text-3xl text-center font-semibold text-[#023766] mb-6">{title}</h3>
+        <div className="bg-[#f5f7fa] border border-[#d8e1ec] shadow-md w-80 h-110 rounded-xl m-10 p-5 flex flex-col justify-between transition hover:scale-115">
+            <h3 className="text-3xl text-center font-bold bg-[#183e5d] p-5 h-25 rounded-t-2xl text-white mb-6">{title}</h3>
             <ul className="text-sm text-gray-700 flex-grow space-y-2">
                 <li className="flex justify-between text-lg"><span>Звонки внутри сети:</span><span className="font-semibold">{time1}</span></li>
                 <li className="flex justify-between text-lg"><span>На другие сети:</span><span className="font-semibold">{time2}</span></li>
