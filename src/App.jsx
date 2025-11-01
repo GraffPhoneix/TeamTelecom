@@ -15,6 +15,7 @@ import PaymentServices from './Routes/Payment-Services'
 import Roaming from './Routes/Roaming'
 import NoPage from './Components/No-page'
 import MyCabinet from './Routes/My-Cabinet'
+import ChatButton from './Components/Chat-icon'
 
 export default function App() {
   return (
@@ -33,9 +34,10 @@ export default function App() {
         <Route path='payment-services' element={<PaymentServices />} />
         <Route path='roaming' element={<Roaming />} />
         <Route path='login' element={<MyCabinet />} />
-        <Route path='mycabinet' element={<MyCabinet />} /> 
+        <Route path='mycabinet' element={<MyCabinet />} />
         <Route path='*' element={<NoPage />} />
       </Routes>
+      <ChatButton />
       <Footer />
     </Router>
   )

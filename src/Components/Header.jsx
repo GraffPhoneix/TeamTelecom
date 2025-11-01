@@ -15,7 +15,7 @@ export default function Header() {
                     <button className="text-red-500 text-sm">RU</button>
                     <button className="text-white text-sm hover:text-red-500 cursor-pointer">ENG</button>
                     <div>
-                        <a href="/login" className="text-white underline text-sm ml-5 flex items-center gap-1 text-center px-3.5 py-3.5 cursor-pointer hover:bg-[rgba(150,209,219,.2)">Sign In</a>
+                        <a href="/login" className="text-white underline text-sm ml-5 flex items-center gap-1 text-center px-3.5 py-3.5 cursor-pointer hover:bg-[rgba(150,209,219,.2)">Личный кабинет</a>
                     </div>
                 </div>
             </div>

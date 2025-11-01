@@ -14,7 +14,7 @@ const dataBase = {
         {
             "body": "",
             "id": 2,
-            "imgURL": "https://www.telecomarmenia.am/images/product/10/1758792966104/245x280c-center.png",
+            "imgURL": "https://www.telecomarmenia.am/images/product/11/17582186245758/245x280c-center.jpeg",
             "price": "37,900 ֏",
             "status": "none",
             "title": "iPhone 17 Pro TechWoven Case with MagSafe",
