@@ -23,7 +23,7 @@ export default function PseudoHeader() {
                     <img src="https://www.telecomarmenia.am/img/logo.svg?v=1" alt="team_logo" className="w-36 h-12 mb-2"/>
                     <a href="/mobile" className="text-gray-700 hover:text-red-600 transition pb-4.5">Моблиная связь</a>
                     <a href="/smartphones" className="text-gray-700 hover:text-red-600 transition pb-4.5">Интернет</a>
-                    <a href="/payment-services" className="text-gray-700 hover:text-red-600 transition pb-4.5">Платежи и пополнения</a>
+                    <a href="/teamtv" className="text-gray-700 hover:text-red-600 transition pb-4.5">TeamTV</a>
                     <a href="/roaming" className="text-gray-700 hover:text-red-600 transition pb-4.5">Роуминг</a>
                 </nav>
                 <a href="/busket" className="relative flex items-center px-4 py-2 bg-[#01415f] text-white rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.03] transition mb-4.5">

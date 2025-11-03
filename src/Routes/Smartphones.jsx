@@ -1,4 +1,3 @@
-import DataBase from '../DataBase'
 import img_1 from '../Img/Smartphones/img_1.jpg'
 import isLogined from '../Components/isLogined'
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -15,7 +14,6 @@ export default function Smartphones() {
     ];
 
     const [openPlan, setOpenPlan] = useState();
-
     const togglePlan = (id) => {
         setOpenPlan(openPlan === id ? null : id);
     };

@@ -11,7 +11,7 @@ import Chat from './Routes/Chat'
 import Mobile from './Routes/Mobile'
 import PseudoHeader from './Components/pseudo_header'
 import Smartphones from './Routes/Smartphones'
-import PaymentServices from './Routes/Payment-Services'
+import TeamTV from './Routes/Team-TV'
 import Roaming from './Routes/Roaming'
 import NoPage from './Components/No-page'
 import MyCabinet from './Routes/My-Cabinet'
@@ -31,7 +31,7 @@ export default function App() {
         <Route path='chat' element={<Chat />} />
         <Route path='mobile' element={<Mobile />} />
         <Route path='smartphones' element={<Smartphones />} />
-        <Route path='payment-services' element={<PaymentServices />} />
+        <Route path='teamtv' element={<TeamTV />} />
         <Route path='roaming' element={<Roaming />} />
         <Route path='login' element={<MyCabinet />} />
         <Route path='mycabinet' element={<MyCabinet />} />
