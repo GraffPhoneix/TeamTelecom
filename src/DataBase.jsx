@@ -158,10 +158,6 @@ const dataBase = {
             { header: 'Mega 500', title: 'Ежедневный Интернет для смартфона.' }
         ]
     },
-    roaming: [
-        { header: 'Условия подключения роуминга', title: `                                       .` },
-        { header: 'Тарифы роуминга на море и в воздухе', title: 'Будьте онлайн, даже на море и в воздухе' }
-    ],
     isLogined: false,
     shop_pseudo_header_images: ['https://www.telecomarmenia.am/images/advanced_slider/2/17591324480321.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321353964.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321199707.png', 'https://www.telecomarmenia.am/images/advanced_slider/2/17591321075712.png']
 };
