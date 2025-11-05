@@ -16,6 +16,7 @@ import Roaming from './Routes/Roaming'
 import NoPage from './Components/No-page'
 import MyCabinet from './Routes/My-Cabinet'
 import ChatButton from './Components/Chat-icon'
+import Shake from './Routes/Shake'
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         <Route path='roaming' element={<Roaming />} />
         <Route path='login' element={<MyCabinet />} />
         <Route path='mycabinet' element={<MyCabinet />} />
+        <Route path='shake' element={<Shake />} />
         <Route path='*' element={<NoPage />} />
       </Routes>
       <ChatButton />
